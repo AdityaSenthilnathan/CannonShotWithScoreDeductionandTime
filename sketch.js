@@ -138,7 +138,7 @@ if (keyCode === 32){
 
 
 async function GetBackground (){
-  var response = await fetch("http://worldtimeapi.org/api/timezone/America/Los_Angeles")
+  var response = await fetch("https://worldtimeapi.org/api/timezone/America/Los_Angeles")
   var time = await response.json();
    var dateTime = time.datetime
     dateTime2 =  dateTime.slice(11,22);
